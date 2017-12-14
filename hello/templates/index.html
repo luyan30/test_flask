@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Hello</h3>
+<ul>
+{% for member in members %}
+<li> {{member.name}} : {{member.email}} </li>
+{% endfor %}
+</ul>
+こんにちは。{{ name }}さん。
+{% endblock %}
